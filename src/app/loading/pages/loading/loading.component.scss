@@ -1,0 +1,33 @@
+@import "../../../../variables";
+.loading-screen {
+  height: 100%;
+  width: 100%;
+  background-color: $blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .circle {
+    background-color: $orange;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    span {
+      color: white;
+      position: relative;
+      left: 32px;
+      font-size: 32px;
+      font-weight: 600; // regular
+    }
+  }
+}
+
+// 800 // Ultra Black
+// 700 // Black
+// 600 // Bold
+// 500 // Medium
+// 400 // Regular
+// 300 // Light
+// 200 // Thin

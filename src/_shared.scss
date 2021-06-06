@@ -1,0 +1,9 @@
+@mixin default-button() {
+  height: 64px;
+  width: 200px;
+  font-size: 32px;
+  font-weight: 500px;
+  &:hover {
+    background-color: rgb(200, 100, 255);
+  }
+}

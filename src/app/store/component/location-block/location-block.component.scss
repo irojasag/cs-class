@@ -1,0 +1,32 @@
+@import "../../../../variables";
+@import "../../../../shared";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  .location {
+    display: flex;
+    align-items: center;
+  }
+  .filter {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+  }
+}
+
+.icon {
+  color: blue !important;
+  font-weight: 700;
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+button {
+  @include default-button;
+
+  // Warning / Primary Action
+  background-color: blue;
+}

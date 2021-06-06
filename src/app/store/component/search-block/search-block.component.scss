@@ -1,0 +1,48 @@
+@import "../../../../shared";
+.icon {
+  color: red;
+  font-weight: 600;
+  font-size: 64px;
+  margin-right: 12px;
+}
+button {
+  @include default-button;
+  // Warning / Primary Action
+  background-color: lightblue;
+}
+
+.elements {
+  margin: 64px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  background-color: blue;
+  height: 300px;
+}
+.element {
+  background-color: red;
+  height: 64px;
+  min-width: 64px;
+  margin: 2px;
+  &:first-child {
+    background-color: gray;
+  }
+  &:last-child {
+    background-color: green;
+  }
+  &:nth-of-type(6) {
+    background-color: orange;
+  }
+  &:nth-of-type(3n - 1) {
+    background-color: khaki;
+  }
+}
+#blue {
+  color: blue;
+}
+p {
+  color: red !important;
+}
